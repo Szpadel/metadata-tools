@@ -1,6 +1,6 @@
 {
   "name": "metadata-tools",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Tools to accelerate implementation of metadata based operations in Typescript.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
