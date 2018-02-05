@@ -1,0 +1,33 @@
+{
+  "name": "metadata-tools",
+  "version": "0.1.0",
+  "description": "Tools to accelerate implementation of metadata based operations in Typescript.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "author": "Piotr Rogowski <piotrek.rogowski@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "build": "rimraf dist/ && tsc -p ./tsconfig.lib.json",
+    "prepublish": "npm run build",
+    "test": "node ./testRunner.js",
+    "test:cover": "rimraf .tmp && tsc -p ./tsconfig.spec.json && istanbul cover --root .tmp/spec/ --include-all-sources jasmine -- .tmp/spec/**/*.spec.js; rimraf .tmp",
+    "test:watch": "watch 'node ./testRunner.js' src"
+  },
+  "devDependencies": {
+    "@types/glob": "^5.0.35",
+    "@types/jasmine": "^2.8.6",
+    "@types/node": "^9.4.0",
+    "coveralls": "^3.0.0",
+    "glob": "^7.1.2",
+    "istanbul": "^0.4.5",
+    "jasmine": "^2.9.0",
+    "jasmine-spec-reporter": "^4.2.1",
+    "rimraf": "^2.6.2",
+    "typescript": "^2.7.1",
+    "watch": "^1.0.2"
+  },
+  "dependencies": {
+    "reflect-metadata": "^0.1.12"
+  }
+}

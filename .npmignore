@@ -1,0 +1,10 @@
+node_modules/
+tslint.json
+tsconfig.json
+tsconfig.lib.json
+tsconfig.spec.json
+jasmine.typescript.js
+testRunner.js
+coverage/
+.tmp/
+src/
