@@ -8,3 +8,4 @@ testRunner.js
 coverage/
 .tmp/
 src/
+.idea/

@@ -1,12 +1,16 @@
 {
   "name": "metadata-tools",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Tools to accelerate implementation of metadata based operations in Typescript.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "author": "Piotr Rogowski <piotrek.rogowski@gmail.com>",
   "license": "MIT",
   "private": false,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Szpadel/metadata-tools.git"
+  },
   "scripts": {
     "build": "rimraf dist/ && tsc -p ./tsconfig.lib.json",
     "prepublish": "npm run build",
